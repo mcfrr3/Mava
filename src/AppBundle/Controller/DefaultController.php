@@ -20,10 +20,7 @@ class DefaultController extends Controller
         ]);
     }
 
-    /**
-     * @Route("/about/{name}", name="aboutpage", defaults={"name":null})
-     */
-    public function aboutAction($name)
+    /*public function aboutAction($name)
     {
         if ($name) {
             $user = $this->getDoctrine()
@@ -35,5 +32,5 @@ class DefaultController extends Controller
             }
         }
         return $this->render('about/index.html.twig', array('user' => $user));
-    }
+    }*/
 }
